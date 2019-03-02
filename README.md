@@ -2,4 +2,4 @@
 Converts color codes to variables in css code
 
 ## Usage
-An example is provided in the **test** folder
+See the result here: https://radfuse.github.io/js-color-to-variable-converter/
