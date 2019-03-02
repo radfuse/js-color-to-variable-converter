@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Color to variable converter</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        Color to Variable Converter
+    </header>
+
+    <section class="width-40">
+        <div class="header text-center">
+            Original
+        </div>
+        <textarea id='source' style='width: 100%' rows='15'></textarea>
+    </section>
+    <section class="width-20">
+        <div class="text-center">
+            <p>
+                <label>Prefix: </label>
+                <input type="text" id="prefix" value="color"/>
+            </p>
+            <p>
+                <label>Preprocessor: </label>
+                <select id="preprocessor">
+                    <option value="sass" selected>SASS</option>
+                    <option value="less">LESS</option>
+                </select>
+            </p>
+            <p>
+                <button type="button" id="submit-btn">Convert</button>
+            </p>
+            <p>
+                <button id="copy-to-clipboard">Copy to Clipboard</button>
+            </p>
+            <p>
+                <span id="copied-alert">Copied!</span>
+            </p>
+        </div>
+    </section>
+    <section class="width-40">
+        <div class="header text-center">
+            Converted
+        </div>
+        <textarea style='width: 100%' rows='15' id="result"></textarea>
+    </section>
+
+    <script src="js/main.js"></script>
+    <script>
+        var converter = new ColorToVariableConverter();
+    </script>
+</body>
+</html>
